@@ -20,9 +20,17 @@ const new1 = `i am ${count} years old`;
 print(new1);
 
 function fullName(first = 'Empty',second = 'Empty surname') {
-    const full = `${first.length} ${second}`;
-    return full;
-    
+  return `${first.length} ${second}`;
 }
 
 print(fullName("khan",'jahan'));
+// document.getElementById("my-btn").onclick = function functionName(){
+//     //statements
+// }
+
+
+
+const addArrow=(numx,numy) => numx+numy;
+const sumxy = addArrow(6,9);
+print(sumxy);
+
