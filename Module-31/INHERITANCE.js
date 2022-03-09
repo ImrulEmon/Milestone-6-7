@@ -50,3 +50,4 @@ const bob = new Release("Bobby","NY");
 console.log(bob);
 const hank=new BugFix("hank","syl");
 hank.startDebug();
+console.log(hank.__proto__);
