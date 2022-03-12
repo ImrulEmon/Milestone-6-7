@@ -27,5 +27,12 @@ function displayUsers(users) {
    }
 }
 function displayPosts(posts) {
-    posts.forEach(post=> console.log(post.title))
+    const ul = document.getElementById("users");
+   for(const post of posts){
+       console.log(post.title);
+       const li = document.createElement('li');
+       li.classList.add("li");
+       li.innerText= `POst Title : ${post.title}`;
+       ul.appendChild(li);
+   }
 }
