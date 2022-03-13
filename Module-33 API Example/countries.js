@@ -1,15 +1,19 @@
-const loadCountries = () =>{
+const loadCountries = () => {
     fetch('https://restcountries.com/v3.1/all')
-    .then(res => res.json())
-    .then(countries=>displayCountries(countries))
+        .then(res => res.json())
+        .then(countries => displayCountries(countries))
 }
 
-const displayCountries=countries=>{
+const displayCountries = countries => {
     const countryContainer = document.getElementById('countryContainer');
-    for(const country of countries){
+    for (const country of countries) {
+        const language = JSON.stringify(country.languages).replace(/[^a-zA-Z0-9:, ]/g, '');
+
+
         const p = document.createElement('p');
-        p.innerHTML=`${country.name.common} | 
-        ${country.capital} | ${country.region}
+        p.innerHTML = `${country.name.common} | 
+        ${country.capital} | ${country.region} |
+        ${language}
         `;
         p.classList.add("country");
         countryContainer.appendChild(p);
@@ -17,27 +21,27 @@ const displayCountries=countries=>{
     }
 }
 
-document.getElementById("countryContainer").addEventListener('click',function(event) {
-    if(event.target.tagName=='P'){
-        event.target.style.fontWeight="bold";
-        event.target.style.backgroundColor="Green";
+document.getElementById("countryContainer").addEventListener('click', function (event) {
+    if (event.target.tagName == 'P') {
+        event.target.style.fontWeight = "bold";
+        event.target.style.backgroundColor = "Green";
 
         // font-weight: bold;
         //     background-color: black;
         //     color: white;
         //     transform: scale(1.1);
     }
-    
+
 })
-document.getElementById("countryContainer").addEventListener('dblclick',function(event) {
-    if(event.target.tagName=='P'){
-        event.target.style.fontWeight="normal";
-        event.target.style.backgroundColor="white";
+document.getElementById("countryContainer").addEventListener('dblclick', function (event) {
+    if (event.target.tagName == 'P') {
+        event.target.style.fontWeight = "normal";
+        event.target.style.backgroundColor = "white";
 
         // font-weight: bold;
         //     background-color: black;
         //     color: white;
         //     transform: scale(1.1);
     }
-    
+
 })
