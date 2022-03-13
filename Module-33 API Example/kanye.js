@@ -9,3 +9,4 @@ function displayQuote(quote){
    quotex.innerText=quote.quote;
 
 }
+
