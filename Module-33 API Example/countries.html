@@ -13,6 +13,16 @@
             font-family: monospace;
         }
 
+        section.sticky {
+            position: sticky;
+            top: 0;
+            background-color: rgba(45, 49, 49, 0.925);
+            color: white;
+            width: 50%;
+            margin: 0 auto;
+            padding: 1% auto;
+        }
+
         button {
             color: white;
             font-weight: bolder;
@@ -33,6 +43,7 @@
             width: 75%;
             margin: 2% auto;
             transition: transform .5s;
+
         }
 
         p:hover {
@@ -46,6 +57,11 @@
 </head>
 
 <body>
+    <section class="sticky">
+        <div id="info">
+
+        </div>
+    </section>
     <button onclick="loadCountries()">Country</button>
     <div id="countryContainer">
 
