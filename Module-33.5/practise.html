@@ -10,13 +10,38 @@
             font-family: monospace;
             font-size: medium;
             text-align: justify;
+            margin: 5px;
+        }
+        .singleComment{
+            border: 2px solid black;
+            padding: 0 5%;
+        }
+        .singleComment:hover{
+            background-color: black;
+            color: white;
+            font-weight: bold;
+        }
+        button{
+            background-color: black;
+            color: white;
+            padding: .5% .75%;
+            border-radius: 5px;
+            border: 2px solid gray;
+        }
+        button:hover{
+            background-color: white;
+            color: black;
+            
         }
     </Style>
 </head>
 <body onload="loadComment()">
     <h3>Practice</h3>
     <button onclick="loadComment()">Comment</button>
+    <div id="CommentInfo">
 
+    </div>
+    <hr>
     <div id="commentBox">
 
     </div>
