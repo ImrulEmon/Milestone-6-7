@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practice 33.5</title>
+    <link rel="shortcut icon" href="fav.ico" type="image/x-icon">
     <Style>
         *{
             font-family: monospace;
@@ -12,14 +13,23 @@
             text-align: justify;
             margin: 5px;
         }
+        #CommentInfo{
+            border: 2px solid black;
+            text-align: center;
+        }
         .singleComment{
+            width: 80%;
+            margin: 5px auto;
             border: 2px solid black;
             padding: 0 5%;
+            transition: transform .2s ease;
         }
         .singleComment:hover{
             background-color: black;
             color: white;
             font-weight: bold;
+            transform: scale(1.1);
+            border-radius: 5px;
         }
         button{
             background-color: black;
