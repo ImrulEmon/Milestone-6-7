@@ -15,28 +15,44 @@
         button {
             background-color: black !important;
         }
-        body{
+
+        body {
             background-image: url(w-tbg.png);
         }
-     </style>
+        .zoom{
+            transition: transform .2s ease;
+        }
+        .zoom:hover{
+            transform: scale(1.5);
+        }
+        .infoT{
+            transition: transform .5s ease;
+        }
+        .infoT:hover{
+            transform: scale(1.1);
+        }
+    </style>
 </head>
 
 <body class="font-monospace">
     <main class="container">
-        <h1 class="text-center my-5">Weather
+        <div class="text-center">
+            <img src="https://media.giphy.com/media/1iPwXyVKrKf0dNmM/giphy.gif" alt="">
+            <h1 class="text-center mb-3 zoom">Weather
+        </div>
         </h1>
         <div class="input-group mb-3 w-75 mx-auto">
-            <input id="city" type="text" class="form-control text-center" placeholder="City Name"
-                aria-label="city Name" aria-describedby="button-addon2">
+            <input id="city" type="text" class="form-control text-center" placeholder="City Name" aria-label="city Name"
+                aria-describedby="button-addon2">
             <!-- button -->
-            <button onclick="loadWeather()" class="btn btn-outline-secondary text-white" type="button"
+            <button onclick="loadWeather()" class="btn text-white" type="button"
                 id="button-search">Search</button>
         </div>
-        
+
         <section id="weather" class="text-center">
-            
+
         </section>
-       
+
 
     </main>
     <!-- Script -->
