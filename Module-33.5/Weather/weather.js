@@ -22,3 +22,11 @@ const loadWeather = () => {
      console.log(data.weather[0].main,data.weather[0].description);
      
  }
+
+let input = document.getElementById("city");
+input.addEventListener("keypress", function (event) {
+    if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById("button-search").click();
+    }
+});
