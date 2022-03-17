@@ -1,1 +1,1 @@
-money:500
+johnTreat(200);
