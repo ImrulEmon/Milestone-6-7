@@ -31,6 +31,11 @@
         .infoT:hover{
             transform: scale(1.1);
         }
+        #owner{
+            font-size: xx-small;
+            font-weight: bold;
+            color: gray;
+        }
     </style>
 </head>
 
@@ -38,7 +43,7 @@
     <main class="container">
         <div class="text-center">
             <img src="https://media.giphy.com/media/1iPwXyVKrKf0dNmM/giphy.gif" alt="">
-            <h1 class="text-center mb-3 zoom">Weather
+            <h1 class="text-center mb-3 zoom">Weather<sub id="owner"> <small>Imrul Emon</small></sub>
         </div>
         </h1>
         <div class="input-group mb-3 w-75 mx-auto">
@@ -48,7 +53,13 @@
             <button onclick="loadWeather()" class="btn text-white" type="button"
                 id="button-search">Search</button>
         </div>
-
+        <!-- spinner -->
+        <div class="d-flex justify-content-center">
+            <div id="load" class="spinner-border" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+          </div>
+        <!-- spinner end -->
         <section id="weather" class="text-center">
 
         </section>
