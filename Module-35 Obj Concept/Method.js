@@ -19,3 +19,7 @@ const student ={
 console.log(student.takeExam())
 const remain = student.treat(500);
 console.log(remain);
+const keys=Object.keys(student);
+console.log(keys);
+const values =Object.values(student);
+console.log(values);
