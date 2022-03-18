@@ -21,6 +21,9 @@
         #info-img{
             display: block;
         }
+        #loading{
+            display: none;
+        }
     </style>
 </head>
 
@@ -38,8 +41,14 @@
         </div>
         <!-- drink info -->
         <div id="info" class="card mb-3 mx-auto sticky-top">
-
         </div>
+        <!-- loading start -->
+        <div class="d-flex justify-content-center">
+            <div id="loading" class="spinner-border" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+          </div>
+        <!-- loading end -->
         <!-- search result -->
         <div id="searchResult" class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
 

@@ -1,4 +1,8 @@
+const loading = document.getElementById('loading');
+
 const loadDrink = () => {
+    loading.style.display="block";
+    document.getElementById('info').textContent='';
     const searchText = document.querySelector('#searchText').value;
      url = `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${searchText}`;
      document.querySelector('#searchText').value='';
@@ -26,6 +30,7 @@ displayDrink = drinks => {
         searchResult.appendChild(div);
         // console.log(drink);
     });
+    loading.style.display="none";
 }
 
 const moreInfo = id =>{
@@ -53,3 +58,12 @@ const displayMoreInfo=drink=>{
             </div>
     `
 }
+
+const elem = document.getElementById("searchText");
+
+elem.addEventListener("keypress", (event)=> {
+    if (event.keyCode === 13) { 
+      event.preventDefault();
+      document.getElementById("button-search").click();
+    }
+  });
