@@ -56,3 +56,12 @@ console.log('--------------------------');
 const fin = number.find(n=>n>21);
 console.log(fin);
 console.log('--------------------------');
+
+const rich ={
+    name : "Rich Man",
+    balance:999.99,
+    age:80
+}
+
+const {age,balance}=rich;
+console.log(balance,age);
