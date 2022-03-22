@@ -3,7 +3,7 @@
 const displayLocalStorageCart=()=>{
     const cart = getCart();
     for(const name in cart){
-        displayProduct(name,cart[name]);
+        displayProduct(name,cart[name]);  //Important cart[name] to get the inside value
     }
 }
 
