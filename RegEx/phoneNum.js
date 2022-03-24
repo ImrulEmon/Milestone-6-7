@@ -10,3 +10,4 @@ else{
     console.log(text,'is not BD number')
 }
 
+//Email-check or phone number check website
