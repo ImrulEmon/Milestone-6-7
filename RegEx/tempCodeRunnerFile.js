@@ -1,1 +1,1 @@
-replaced
+console.count();
