@@ -23,7 +23,22 @@ console.countReset('coffee');
 ---------------
 console.debug('debug');
 ------
+console.dir(object)
 console.dir(document.head);
-----------------------------------*/
+-----------
+#console.dirxml(node)
 console.dirxml(document);
+-------------
+console.error(object [, object, ...])
+console.error("Error occured");
+----------------------------------*/
+const label = 'Anime Character';
+
+console.group(label);
+console.groupCollapsed(label);
+console.info('eren');
+console.info('mikasa');
+console.info('levi');
+console.info('conny');
+console.info('hanzo');
 
