@@ -13,3 +13,9 @@ myName='Eren';
 let boo:boolean=false;
 boo=true;
 console.log('hello from TS',myNumber,myName,money,boo);
+
+
+function add (first:number,second:number){
+    const result = first+second;
+    return result;
+}
