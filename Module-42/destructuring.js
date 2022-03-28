@@ -14,6 +14,6 @@ const student={
     sub:["eng",'ban','math']
 };
 const{age,name}=student;
-const [s1,s2,s3]=student.sub;
+const [s1,s2,s3]=student?.sub;
 console.log(s1,s2,s3,age,name);
 
