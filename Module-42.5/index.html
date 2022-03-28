@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="work-process.png" type="image/x-icon">
+    <title>Loop Time measure</title>
+    <style>
+        * {
+            text-align: center;
+        }
+
+        #result,
+        button {
+            margin: 5% auto;
+            font-family: monospace;
+            border: 2px solid black;
+            height: 20%;
+            width: 50%;
+            border-radius: 5px;
+        }
+        #result{
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        }
+        button {
+            width: auto;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 2%;
+        }
+
+        button:hover {
+            color: white;
+            background-color: black;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        }
+
+        hr {
+            width: 20%;
+            margin: 5% auto;
+        }
+        span{
+            font-weight: bolder;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="runloop()">Run the loop</button>
+    <div id="result"> 
+        <p style="padding: 2% ;">Each click on the button will run loop <span>1000000</span> times and output will give the time to execite the operation</p>
+        <hr>
+    </div>
+    <script src="https://cdn.jsdelivr.net/lodash/4.13.1/lodash.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
