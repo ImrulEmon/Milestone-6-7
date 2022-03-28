@@ -13,7 +13,7 @@ const student={
     age:9,
     sub:["eng",'ban','math']
 };
-
+const{age,name}=student;
 const [s1,s2,s3]=student.sub;
-console.log(s1,s2,s3);
+console.log(s1,s2,s3,age,name);
 

@@ -11,6 +11,12 @@
  * -object
  * -function
  * -array
+ * -Empty array
+ * []
+ * {}
+ * anything else that is not falsy is truthy
+ * 
+ * 
  * 
  * 2
  * Truthy:
@@ -27,20 +33,6 @@
  * -if variable is undefined
  * -null
  * -NaN(Not a Number)
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
  * 
  * 
  */
