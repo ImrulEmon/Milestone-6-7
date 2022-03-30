@@ -21,3 +21,4 @@ setInterval(()=>{
     console.log(imgUrl);
     imgIndex++;
 },1000)
+
