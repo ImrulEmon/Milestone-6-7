@@ -4,7 +4,7 @@
  
  live projects : 
  
-<a href="https://weathering-with-emon.netlify.app/">Waether⛅🌤🌨🌧</a>
+<a href="https://weathering-with-emon.netlify.app/">Weather⛅🌤🌨🌧</a>
 
 
 <a href="https://imrulemon-drink.netlify.app/">Drink🍹🍸🍷🍾</a>
